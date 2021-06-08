@@ -237,6 +237,7 @@
         if(flag1){
             musicPlay();
         }else{
+            index=0;
             musicStop();
         }
     }
@@ -319,14 +320,12 @@
             
             var conlist=localStorage['conlist'];
             conlist=JSON.parse(conlist);
-         if(conlist.length<4){
-            addview(viewcontent,viewtime);
-         }else{  
-              people.style.display="none";
-              nextpage();
-         }
+            if(conlist.length<4){
+                addview(viewcontent,viewtime);
+            }else{  
+                nextpage();
+            }
             myinput.value="";//清除!!
-            alert("评论成功");
         }
     }
     function savecontent(viewcontent){
@@ -389,21 +388,22 @@
         time2.innerHTML=conlist[1]["opiniontime"];
         per3.innerHTML=conlist[2]["opinion"];
         time3.innerHTML=conlist[2]["opiniontime"];
-        
     }
+
     var n=3;
+    var index=0;
     var views=document.getElementsByClassName("views")[0];
+   
     function nextpage(){
-        
-        
-        var fdiv=document.createElement("div");
+        fdiv=document.createElement("div");
         fdiv.setAttribute("class","people");
         views.insertBefore(fdiv, people); 
-        
+
+        fdiv.style.display="block";
         var conlist=localStorage["conlist"];
         conlist=JSON.parse(conlist);
        
-        while(n<=conlist.length){
+        while(n<=conlist.length&& index){
             var pNode=document.createElement("p");
             var spanNode=document.createElement("span");
             pNode.innerHTML="<div id='myviews' class='per3'>"+conlist[n]["opinion"]+"</div>";
@@ -416,8 +416,14 @@
     }
 
     next.onclick=function(){
+        index=1;
         people.style.display="none";
         nextpage();
+    }
+
+    one.onclick=function(){
+        people.style.display="block";
+        fdiv.style.display="none";
     }
 </script>
 </html>
