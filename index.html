@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+    <!-- <link rel=stylesheet href="work.js"/> -->
+    <link rel=stylesheet href="./demo.css"/>
+</head>
+<body>
+    <div class="box">
+        <div class="nav">
+            <img class="logo1" src="./images/logo1.jpg"/>
+            <div>首页</div>
+            <div>榜单</div>
+            <div>歌手</div>
+            <div>下载酷我客户端</div>
+            <div class="star-font"><div class="star"></div>美女秀</div>
+            <div class="star-font"><div class="star"></div>酷我耳机</div>
+            <div class="star-font"><div class="star"></div>VIP会员</div>
+            <div class="star-font"><div class="star"></div>i听</div>
+            <div class="more">更多服务</div>
+            <div class="more">登录</div>
+            <div>^</div>
+            <div id="moremusic">
+                <!-- <p>找到好音乐</p> -->
+                <img class="search" src="./images/img3.png"/>
+                <input id="mysearch" type="text" placeholder="找到好音乐" values="找到好音乐"/>
+            </div>
+        </div>
+
+        <div class="middle">
+            <div class="left">
+                <!-- 歌曲上部分 -->
+                <div class="name">
+                    <h2>喜羊羊</h2>
+                    <div>
+                        专辑：<span class="light">儿歌大全</span>
+                        歌手：<span class="light">华语群星</span>
+                        <span>分享</span>
+                        <span class="light"><img src="./images/img4.jpg">评论</span>
+                        <p>上传时间：2015-10-02 歌曲来源：民大相思湖网球社</p>
+                        <!-- <hr/> -->
+                    </div>
+                </div>
+                <!-- 歌词 -->
+                <div class="songcontent">
+                    <p>白云因为我变得柔软</p>
+                    <p>别看我只是一只羊</p>
+                    <p>羊儿的聪明难以想象</p>
+                    <p>天再高心情一样奔放</p>
+                    <p>每天都追赶太阳</p>
+                    <p class="light">有什么难题 去牵绊我 都不会去心伤</p>
+                    <p>有什么危险 在我面前 也不会去慌乱</p>
+                    <p> 就算有狼群 把我追捕 也当做游戏一场</p>
+                    <p>在什么时间 都爱开心 笑容都会飞翔</p>
+                    <p> 就算会摔倒 站了起来 永远不会沮丧</p>
+                    <p>在所有天气 拥有叫人 大笑的力量</p>
+                    <p>虽然我只是羊</p>
+                </div>
+
+            </div>
+
+            <div class="right">
+                
+                <div class="cir1">
+                    <!-- 圆圈间隙？？ -->
+                    <!-- <div class="cricle0"> -->
+                        <div class="cir2">
+                            <div class="cir3"></div>
+                        </div>
+                        
+                    <!-- </div> -->
+                </div>
+                
+                <div class="songs">
+                    <audio id="music1">
+                        <source src="./images/2.mp3" type="audio/mp3">
+                    </audio>
+                    <!-- 播放 -->
+                    <div class="playerleft"></div>
+                    <!-- 进度条 总长-->
+                    <div class="playerbar">
+                        <!-- 当前长度 -->
+                        <div class="nowbar"></div>
+                        <!-- 圆心 -->
+                        <div class="nowbtn"></div>
+                    </div>
+                    <!-- 时间 -->
+                    <div class="playertime">00:00</div>
+                    <!-- 静音 -->
+                    <div class="playerright"></div>
+
+                </div>
+
+                <div class="download">
+                    <div></div>免费下载这首歌
+                </div>
+
+                <div class="myopinion">
+                    <div class="pic cirphoto"></div>
+                    <div>
+                        <div class="up">郭子仪——H5班</div>
+                        <div class="down"><img src="./images/gif.gif">
+                            <span>喜羊羊与灰太狼</span>
+                            <a href="#">去现场></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="my-view">
+                <div>评论<span>&nbsp;&nbsp;1703条评论</span></div>
+
+                <div class="inp">
+                    <div class="pic"></div>
+                    <!-- 聚焦时需要清空 -->
+                    <textarea class="myinput">分享你的音乐见解</textarea>
+                    <!-- 怎么移到开头 ？？ -->
+                    <!-- <input  class="myinput" type="text" value="" placeholder="分享你的音乐见解"/> -->
+                </div>
+                <div class="expression">
+                    <div class="exp"></div>
+                    <div><span>已输入0个字</span><button class="sub">评论</button></div>
+                </div>
+            </div>
+
+            <div class="views">
+                <div class="opinion">精彩评论</div>
+                <div class="people">
+                    <div class="first">
+                        <div class="pic"></div>
+                        <div class="col">
+                            <div><span class="light">郭子仪</span><span class="share">分享</span></div>
+                            <div id="myviews" class="per1"></div>
+                            <!-- Too -->
+                            <div class="bottomcontent">
+                                <p class="time" id="time1"></p>
+                                <!-- 2017-06-10 07:00:42 -->
+                                <span class="bottomright del">删除&nbsp;163 <img src="./images/bg2.jpg">&nbsp;回复</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="pic2"></div>
+                        <div class="col">
+                            <div><span class="light">Forget</span><span class="share">分享</span></div>
+                            <div id="myviews" class="per2"></div>
+                            <!-- 我喜欢很多歌曲，喜欢过很多唱歌的人，那些有时不是我的爱好，已经成为了我那段青春的回忆，我现在可以很骄傲 -->
+                            <div class="bottomcontent">
+                                <p class="time" id="time2"></p>
+                                <!-- 2017-06-03 16:58:02 -->
+                                <span class="bottomright">149 <img src="./images/bg2.jpg">&nbsp;回复</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="first">
+                        <div class="pic2"></div>
+                        <div class="col">
+                            <div><span class="light">亚里士多德</span><span class="share">分享</span></div>
+                            <div id="myviews" class="per3"></div>
+                            <!-- 学校晚会表演这歌 -->
+                            <div class="bottomcontent">
+                                <p class="time" id="time3"></p>
+                                <!-- 2017-05-14 16:16:53 -->
+                                <span class="bottomright">106 <img src="./images/bg2.jpg">&nbsp;回复</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 
+            <div class="pages">
+                <div class="viewpages">
+                    <div id="pre"><</div>
+                    <div id="one">1</div>
+                    <div id="two">2</div>
+                    <div id="three">3</div>
+                    <div>...</div>
+                    <div>17</div>
+                    <div id="next">></div>
+                </div>
+            </div>           
+        </div>
+    </div>
+</body>
+<script>
+    var playeron=document.getElementsByClassName("playerleft")[0];
+    var playertime=document.getElementsByClassName("playertime")[0];
+    var playermute=document.getElementsByClassName("playerright")[0];   
+    var nowbar=document.getElementsByClassName("nowbar")[0];
+    var nowbtn=document.getElementsByClassName("nowbtn")[0];
+    var music1=document.getElementById("music1");
+    // 存储数据
+    var myinput=document.getElementsByClassName("myinput")[0];
+    var sub=document.getElementsByClassName("sub")[0];
+
+    //显示
+    var myviews=document.getElementById("myviews");
+    var mytime=document.getElementsByClassName("time")[0];
+    var per1=document.getElementsByClassName("per1")[0];
+    var time1=document.getElementById("time1");
+    var per2=document.getElementsByClassName("per2")[0];
+    var time2=document.getElementById("time2");
+    var per3=document.getElementsByClassName("per3")[0];
+    var time3=document.getElementById("time3");
+
+    //翻页
+    var one=document.getElementById("one");
+    var two=document.getElementById("two");
+    var next=document.getElementById("next");
+    var pre=document.getElementById("pre");
+
+    //搜索
+    var mysearch=document.getElementById("mysearch");
+
+    //下一页
+    var people=document.getElementsByClassName("people")[0];
+    var first=document.getElementsByClassName("first")[0];
+
+    mysearch.onfocus=function(){
+        mysearch.placeholder="";
+        mysearch.style.outline="none";
+    }
+    mysearch.onblur=function(){
+        mysearch.placeholder="找到好音乐";
+    }
+
+    //播放
+    var flag1=true;
+    playeron.onclick=function(){
+        if(flag1){
+            musicPlay();
+        }else{
+            musicStop();
+        }
+    }
+    function musicPlay(){
+        music1.play();
+        playeron.style.backgroundPositionX=70+'px';
+        playeron.style.backgroundPositionY=-47+"px";
+        flag1=false;
+        getTime();
+        getProcess();
+    }
+    function musicStop(){
+        music1.pause();
+        clearInterval(timer1);
+        clearInterval(timer2);
+        playeron.style.backgroundPositionX=-160+'px';
+        playeron.style.backgroundPositionY=1+"px";
+        flag1=true;
+    }
+    //静音
+    var flag2=true;
+    playermute.onclick=function(){
+        if(flag2){
+            music1.muted=true;
+            playermute.style.backgroundPositionX=0+'px';
+            playermute.style.backgroundPositionY=-20+"px";
+            flag2=false;
+        }else{
+            music1.muted=false;
+            playermute.style.backgroundPositionX=-68+'px';
+            playermute.style.backgroundPositionY=0+"px";
+            flag2=true;
+        }
+    }
+    // 进度条
+    function getProcess(){
+    var musicLength=music1.duration;
+    timer2=setInterval(function(){
+        var musicCurTime=music1.currentTime;
+        var processnow=parseFloat(musicCurTime/musicLength)*440;
+        nowbar.style.width=processnow+"px";
+        nowbtn.style.left=processnow+"px";
+    },10)
+    }
+    //时间
+    function getTime(){
+    var musicLength=music1.duration;
+    timer1=setInterval(function(){
+        var musicCurTime=music1.currentTime;
+        var minute=parseInt(musicCurTime/60);
+        var second=parseInt(musicCurTime)-minute*60;
+        
+        if(second<10 && minute<10){
+        playertime.innerHTML="0"+minute+":0"+second;
+        }else if(second<10&&minute>=10){
+        playertime.innerHTML=minute+":0"+second;
+        }else  if(second>=10&&minute<10){
+        playertime.innerHTML="0"+minute+":"+second;
+        }else  if(second>=10&&minute>=10){
+        playertime.innerHTML=minute+":"+second;
+        }
+    },1000);
+    }
+
+    myinput.onclick=function(){
+        myinput.value="";
+        nowtime();
+    }
+
+    //点击评论存储内容，时间
+    sub.onclick=function(){
+        var viewtime= nowtime();
+        var viewcontent=myinput.value;
+        
+        // console.log(viewcontent);
+        if(viewcontent==''){
+            alert('文本框不能为空');
+        }else{
+            savecontent(viewcontent);
+            
+            var conlist=localStorage['conlist'];
+            conlist=JSON.parse(conlist);
+         if(conlist.length<4){
+            addview(viewcontent,viewtime);
+         }else{  
+              people.style.display="none";
+              nextpage();
+         }
+            myinput.value="";//清除!!
+            alert("评论成功");
+        }
+    }
+    function savecontent(viewcontent){
+        var conlist=localStorage['conlist'];
+        if(conlist==''||conlist==null||conlist==undefined){
+            conlist='[]';
+        }
+        var viewtime=nowtime();
+        //存储的对象必须是json格式
+        conlist=JSON.parse(conlist);
+        var conobj={
+            contentid:conlist.length,
+            opinion:viewcontent,
+            opiniontime:viewtime
+        }
+        conlist.push(conobj);
+        localStorage["conlist"]=JSON.stringify(conlist);
+    
+    }
+
+   
+
+    function nowtime(){
+        //获取时间函数
+        var date=new Date();
+        var nowyear=date.getFullYear();
+        var nowmonth=date.getMonth()+1;
+        var nowday=date.getDate();
+        var nowhour=date.getHours();
+        var nowminute=date.getMinutes();
+        var nowsecond=date.getMinutes();
+
+        nowmonth=nowmonth<10? '0'+nowmonth:nowmonth;
+        nowday=nowday<10?'0'+nowday:nowday;
+        nowhour=nowhour<10?'0'+nowhour:nowhour;
+        nowminute=nowminute<10?'0'+nowminute:nowminute; 
+        nowsecond=nowsecond<10?'0'+nowsecond:nowsecond;
+
+        var current=nowyear+'-'+nowmonth+'-'+nowday+" "+nowhour+":"+nowminute+":"+nowsecond;
+        // console.log(current);
+        return current;
+    }
+
+
+    window.onload=function(){
+        var viewcontent=myinput.value;
+        var viewtime=nowtime();
+        addview(viewcontent,viewtime);
+    }
+
+
+    //显示新数据
+    function addview(viewcontent,viewtime){
+        var conlist=localStorage["conlist"];
+        conlist=JSON.parse(conlist);
+       
+        per1.innerHTML=conlist[0]["opinion"];
+        time1.innerHTML=conlist[0]["opiniontime"];
+        per2.innerHTML=conlist[1]["opinion"];
+        time2.innerHTML=conlist[1]["opiniontime"];
+        per3.innerHTML=conlist[2]["opinion"];
+        time3.innerHTML=conlist[2]["opiniontime"];
+        
+    }
+    var n=3;
+    var views=document.getElementsByClassName("views")[0];
+    function nextpage(){
+        
+        
+        var fdiv=document.createElement("div");
+        fdiv.setAttribute("class","people");
+        views.insertBefore(fdiv, people); 
+        
+        var conlist=localStorage["conlist"];
+        conlist=JSON.parse(conlist);
+       
+        while(n<=conlist.length){
+            var pNode=document.createElement("p");
+            var spanNode=document.createElement("span");
+            pNode.innerHTML="<div id='myviews' class='per3'>"+conlist[n]["opinion"]+"</div>";
+            spanNode.innerHTML="<p class='time' id='time3'>"+conlist[n]["opiniontime"]+"</p>";
+            
+            fdiv.appendChild(pNode);
+            fdiv.appendChild(spanNode);
+            n++;
+        }
+    }
+
+    next.onclick=function(){
+        people.style.display="none";
+        nextpage();
+    }
+</script>
+</html>
